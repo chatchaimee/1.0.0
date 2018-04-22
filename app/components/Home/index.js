@@ -45,12 +45,6 @@ const styles = {
   subHeader: {
     color: 'rgba(255, 255, 255, .8)',
   },
-  particle: {
-    position: 'absolute',
-    zIndex: 1,
-    width: '100%',
-    height: '100%',
-  },
 };
 
 function Home(props) {
