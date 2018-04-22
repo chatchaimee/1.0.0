@@ -16,5 +16,5 @@ module.exports = {
   exportPathMap: () => ({
     '/': { page: '/' }
   }),
-  assetPrefix: NODE_ENV !== 'development' ? '/my-site' : ''
+  assetPrefix: NODE_ENV !== 'development' ? '/1.0.0' : ''
 };
