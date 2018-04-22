@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/zeit/next.js/">
     <img
-      src="https://raw.githubusercontent.com/chatchaimee/my-site/master/static/images/powered/next-js.png"
+      src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png"
       width="112"
     />
   </a>

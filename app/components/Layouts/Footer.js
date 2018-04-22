@@ -42,12 +42,12 @@ function Powered(props) {
           <div className={classes.poweredContent}>
             <a className={classes.logo} href="https://github.com/zeit/next.js/" target="_blank">
               <i>
-                <img src="static/images/powered/next-js.png" alt="next.js" height="70" width="130" />
+                <img src="static/images/powered/next-js.svg" alt="next.js" height="70" width="130" />
               </i>
             </a>
             <a className={classes.logo} href="https://material-ui-next.com/" target="_blank">
               <i>
-                <img src="static/images/powered/material-ui.svg" alt="next.js" height="60" width="60" />
+                <img src="static/images/powered/material-ui.svg" alt="material-ui" height="60" width="60" />
               </i>
             </a>
           </div>
