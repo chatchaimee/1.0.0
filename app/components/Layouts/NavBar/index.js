@@ -41,9 +41,9 @@ function NavBar(props) {
         <Toolbar>
           {/* Hidden button burger on desktop */}
           <Hidden mdUp>
-          <DrawerMenu
-            scrollOptions={scrollOptions}
-          />
+            <DrawerMenu
+              scrollOptions={scrollOptions}
+            />
           </Hidden>
           <Typography variant="title" color="inherit" className={classes.flex}>
             M. Chatchai

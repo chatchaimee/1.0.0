@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import {
+  Hidden,
   Typography,
   withStyles,
 } from 'material-ui';
@@ -60,7 +61,14 @@ function Home(props) {
               <span />
             </a>
           </div>
-          <div className={classes.backgroundImage} />
+            {/* No fixed background on tablet and mobile */}
+            <Hidden mdUp>
+              <div className={classes.backgroundImage} />
+            </Hidden>
+            {/* Fixed background on desktop */}
+            <Hidden smDown>
+              <div className={classes.backgroundImage} style={{ backgroundAttachment: 'fixed' }} />
+            </Hidden>
         </div>
       </div>
     </div>
