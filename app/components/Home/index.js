@@ -9,14 +9,8 @@ import { handleClickAndScrollToTarget } from '@/app/helpers/scroll';
 const styles = {
   root: {
     height: '100vh',
-    width: '100%',
-    overflow: 'hidden',
-    position: 'relative',
-    display: 'block',
-    padding: 0,
   },
   content: {
-    alignItems: 'center',
     textAlign: 'center',
     background: 'rgba(0, 0, 0, .5)',
     color: 'rgba(255, 255, 255, .8)',
@@ -24,18 +18,12 @@ const styles = {
     flexDirection: 'column',
     height: '100%',
     justifyContent: 'center',
-    padding: '0 30px',
-    position: 'absolute',
     width: '100%',
   },
   backgroundImage: {
     backgroundImage: 'url("static/images/home/home.jpg")',
-    backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    webkitBackgroundSize: 'cover',
-    '-moz-background-size': 'cover',
-    '-o-background-size': 'cover',
     backgroundSize: 'cover',
     height: '100%',
     position: 'absolute',

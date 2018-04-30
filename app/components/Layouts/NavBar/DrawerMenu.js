@@ -70,7 +70,7 @@ class DrawerMenu extends React.Component {
     const { menus } = config;
 
     return (
-      <div>
+      <>
         <IconButton
           className={classes.menuButton}
           color="inherit"
@@ -111,7 +111,7 @@ class DrawerMenu extends React.Component {
             ))}
           </List>
         </Drawer>
-      </div>
+      </>
     );
   }
 }

@@ -33,11 +33,11 @@ class Main extends React.Component {
     const { children } = this.props;
     
     return (
-      <div>
+      <>
         <NavBar {...this.props} />
         { children }
         <Footer />
-      </div>
+      </>
     );
   }
 }
