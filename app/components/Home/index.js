@@ -61,14 +61,14 @@ function Home(props) {
               <span />
             </a>
           </div>
-            {/* No fixed background on tablet and mobile */}
-            <Hidden mdUp>
-              <div className={classes.backgroundImage} />
-            </Hidden>
-            {/* Fixed background on desktop */}
-            <Hidden smDown>
-              <div className={classes.backgroundImage} style={{ backgroundAttachment: 'fixed' }} />
-            </Hidden>
+          {/* No fixed background on tablet and mobile */}
+          <Hidden mdUp>
+            <div className={classes.backgroundImage} />
+          </Hidden>
+          {/* Fixed background on desktop */}
+          <Hidden smDown>
+            <div className={classes.backgroundImage} style={{ backgroundAttachment: 'fixed' }} />
+          </Hidden>
         </div>
       </div>
     </div>
