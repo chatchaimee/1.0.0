@@ -22,7 +22,6 @@ const styles = {
     width: '100%',
   },
   backgroundImage: {
-    backgroundImage: 'url("static/images/home/home.jpg")',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -63,11 +62,20 @@ function Home(props) {
           </div>
           {/* No fixed background on tablet and mobile */}
           <Hidden mdUp>
-            <div className={classes.backgroundImage} />
+            <div
+              className={classes.backgroundImage}
+              style={{
+                backgroundImage: 'url("static/images/home/home-mobile.jpg")',
+              }}/>
           </Hidden>
           {/* Fixed background on desktop */}
           <Hidden smDown>
-            <div className={classes.backgroundImage} style={{ backgroundAttachment: 'fixed' }} />
+            <div
+              className={classes.backgroundImage}
+              style={{
+                backgroundImage: 'url("static/images/home/home.jpg")',
+                backgroundAttachment: 'fixed',
+              }} />
           </Hidden>
         </div>
       </div>
