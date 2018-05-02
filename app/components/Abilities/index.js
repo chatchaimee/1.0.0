@@ -5,7 +5,7 @@ import {
   Grid,
   withStyles,
 } from 'material-ui';
-import { getSkill, getTool, getLanguage } from '@/app/helpers/app';
+import { getSkill, getTool, getLanguage } from '~/app/helpers/app';
 
 const styles = {
   root: {

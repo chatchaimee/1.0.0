@@ -3,8 +3,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { handleScroll } from '@/app/modules/scroll/actions';
-import config from '@/app/config';
+import { handleScroll } from '~/app/modules/scroll/actions';
+import config from '~/app/config';
 
 class Main extends React.Component {
   componentDidMount() {

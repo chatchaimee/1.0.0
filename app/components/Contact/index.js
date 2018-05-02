@@ -3,7 +3,7 @@ import {
   Typography,
   withStyles,
 } from 'material-ui';
-import { getEducation, getCareer } from '@/app/helpers/app';
+import { getEducation, getCareer } from '~/app/helpers/app';
 
 const styles = {
   root: {

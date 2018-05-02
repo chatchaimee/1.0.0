@@ -14,11 +14,11 @@
   "author": "Chatchai Meesuksabai",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/icons": "1.0.0-beta.43",
     "cross-env": "5.1.4",
     "gh-pages": "1.1.0",
     "jss": "9.8.1",
-    "material-ui": "1.0.0-beta.40",
-    "material-ui-icons": "1.0.0-beta.36",
+    "material-ui": "1.0.0-beta.44",
     "next": "6.0.0",
     "next-redux-wrapper": "1.3.5",
     "prop-types": "15.6.1",

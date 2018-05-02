@@ -4,8 +4,8 @@ import {
   Typography,
   withStyles,
 } from 'material-ui';
-import { scrollOptions } from '@/app/config';
-import { handleClickAndScrollToTarget } from '@/app/helpers/scroll';
+import { scrollOptions } from '~/app/config';
+import { handleClickAndScrollToTarget } from '~/app/helpers/scroll';
 
 const styles = {
   root: {

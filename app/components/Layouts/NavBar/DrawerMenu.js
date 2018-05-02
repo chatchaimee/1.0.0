@@ -11,10 +11,10 @@ import {
   Divider,
   withStyles,
 } from 'material-ui';
-import MenuIcon from 'material-ui-icons/Menu';
-import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
-import { handleClickAndScrollToTarget } from '@/app/helpers/scroll';
-import config from '@/app/config';
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import { handleClickAndScrollToTarget } from '~/app/helpers/scroll';
+import config from '~/app/config';
 
 const styles = theme => ({
   menuButton: {
@@ -33,7 +33,7 @@ const styles = theme => ({
   },
   drawerTextHeader: {
     position: 'absolute',
-    padding: 18,
+    padding: 14,
     fontSize: '1.3125rem',
     fontWeight: 500,
   },

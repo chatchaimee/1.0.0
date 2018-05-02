@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Tabs, { Tab } from 'material-ui/Tabs';
-import config from '@/app/config';
+import config from '~/app/config';
 import {
   scrollEvents,
   handleClickAndScrollToTarget
-} from '@/app/helpers/scroll';
+} from '~/app/helpers/scroll';
 
 const styles = theme => ({
   root: {

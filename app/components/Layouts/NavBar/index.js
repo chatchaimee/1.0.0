@@ -8,7 +8,7 @@ import {
 } from 'material-ui';
 import TabMenu from './TabMenu';
 import DrawerMenu from './DrawerMenu';
-import { scrollOptions } from '@/app/config';
+import { scrollOptions } from '~/app/config';
 
 const styles = {
   root: {

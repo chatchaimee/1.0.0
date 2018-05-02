@@ -5,7 +5,7 @@ import {
   Typography,
   withStyles,
 } from 'material-ui';
-import { getProfile } from '@/app/helpers/app';
+import { getProfile } from '~/app/helpers/app';
 
 const styles = {
   root: {
