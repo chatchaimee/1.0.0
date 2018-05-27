@@ -9,8 +9,7 @@
     "start": "next start",
     "export": "next export",
     "analyze": "cross-env && ANALYZE=1 && next build",
-    "deploy":
-      "rm -rf node_modules/.cache && rm -rf out/ && next build && next export && touch out/.nojekyll && gh-pages --src '{.nojekyll,**/*}' -d out -m \"Deploy $(git rev-parse HEAD) to GitHub pages [ci skip]\""
+    "deploy": "rm -rf node_modules/.cache && rm -rf out/ && next build && next export && touch out/.nojekyll && gh-pages --src '{.nojekyll,**/*}' -d out -m \"Deploy $(git rev-parse HEAD) to GitHub pages [ci skip]\""
   },
   "author": "Chatchai Meesuksabai",
   "license": "MIT",
@@ -30,11 +29,13 @@
     "react-scroll": "1.7.9",
     "redux": "4.0.0",
     "redux-devtools-extension": "2.13.2",
-    "redux-thunk": "2.2.0"
+    "redux-thunk": "2.2.0",
+    "styled-components": "^3.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-plugin-root-import": "5.1.0",
+    "babel-plugin-styled-components": "^1.5.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",

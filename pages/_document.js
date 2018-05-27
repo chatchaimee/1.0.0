@@ -1,10 +1,18 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 import JssProvider from 'react-jss/lib/JssProvider';
 import flush from 'styled-jsx/server';
 import getPageContext from '~/src/getPageContext';
 
 class MyDocument extends Document {
+	static getInitialProps ({ renderPage }) {
+		const sheet = new ServerStyleSheet();
+		const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
+		const styleTags = sheet.getStyleElement();
+		return { ...page, styleTags };
+	}
+
 	render () {
 		const { pageContext } = this.props;
 
@@ -12,6 +20,7 @@ class MyDocument extends Document {
 			<html lang="en" dir="ltr">
 				<Head>
 					<title>My page</title>
+					{this.props.styleTags}
 					<meta charSet="utf-8" />
 					{/* Use minimum-scale=1 to enable GPU rasterization */}
 					<meta
@@ -35,6 +44,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/icon?family=Material+Icons"
 					/>
+					<link rel="stylesheet" href="static/css/styles.css" />
 				</Head>
 				<body>
 					<Main />

@@ -1,11 +1,20 @@
 {
-  "presets": ["next/babel"],
-  "plugins": [
-    [
-      "babel-plugin-root-import",
-      {
-        "rootPathPrefix": "~"
-      }
-    ]
-  ]
+	"presets": ["next/babel"],
+	"plugins": [
+		[
+			"styled-components",
+			{
+				"ssr": true,
+				"displayName": false,
+				"preprocess": false,
+				"minify": true
+			}
+		],
+		[
+			"babel-plugin-root-import",
+			{
+				"rootPathPrefix": "~"
+			}
+		]
+	]
 }
