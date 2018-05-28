@@ -19,14 +19,9 @@ function Home ({ header, subHeader }) {
 	);
 }
 
-Home.defaultProps = {
-	header: '',
-	subHeader: ''
-};
-
 Home.propTypes = {
-	header: PropTypes.string,
-	subHeader: PropTypes.string
+	header: PropTypes.string.isRequired,
+	subHeader: PropTypes.string.isRequired
 };
 
 export default Home;

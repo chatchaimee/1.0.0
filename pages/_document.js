@@ -6,21 +6,22 @@ import flush from 'styled-jsx/server';
 import getPageContext from '~/src/getPageContext';
 
 class MyDocument extends Document {
-	static getInitialProps ({ renderPage }) {
-		const sheet = new ServerStyleSheet();
-		const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
-		const styleTags = sheet.getStyleElement();
-		return { ...page, styleTags };
+	static async getInitialProps (...args) {
+		const documentProps = await super.getInitialProps(...args);
+		const styles = flush();
+		return { ...documentProps, styles };
 	}
 
 	render () {
+		const sheet = new ServerStyleSheet();
+		const main = sheet.collectStyles(<Main />);
+		const styleTags = sheet.getStyleElement();
 		const { pageContext } = this.props;
 
 		return (
 			<html lang="en" dir="ltr">
 				<Head>
-					<title>My page</title>
-					{this.props.styleTags}
+					<title>Chatchai Meesuksabai - Developer</title>
 					<meta charSet="utf-8" />
 					{/* Use minimum-scale=1 to enable GPU rasterization */}
 					<meta
@@ -45,9 +46,10 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/icon?family=Material+Icons"
 					/>
 					<link rel="stylesheet" href="static/css/styles.css" />
+					{styleTags}
 				</Head>
 				<body>
-					<Main />
+					{main}
 					<NextScript />
 				</body>
 			</html>
