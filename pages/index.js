@@ -1,13 +1,15 @@
-import { Fragment } from 'react';
+import Layout from '~/src/scenes/Layout';
 import Home from '~/src/scenes/Home';
+import Profile from '~/src/scenes/Profile';
 import withRoot from '~/src/withRoot';
-import { home } from '~/src/config';
+import { home, profile } from '~/src/config';
 
 function Index () {
 	return (
-		<Fragment>
-			<Home header={home.header} subHeader={home.subHeader} />
-		</Fragment>
+		<Layout>
+			<Home {...home} />
+			<Profile {...profile} />
+		</Layout>
 	);
 }
 

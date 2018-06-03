@@ -4,6 +4,7 @@ import { ServerStyleSheet } from 'styled-components';
 import JssProvider from 'react-jss/lib/JssProvider';
 import flush from 'styled-jsx/server';
 import getPageContext from '~/src/getPageContext';
+import Preloader from '~/src/scenes/Preloader';
 
 class MyDocument extends Document {
 	static async getInitialProps (...args) {
@@ -32,10 +33,7 @@ class MyDocument extends Document {
 						}
 					/>
 					{/* PWA primary color */}
-					<meta
-						name="theme-color"
-						content={pageContext.theme.palette.primary.main}
-					/>
+					<meta name="theme-color" content={pageContext.theme.palette.primary.main} />
 					<link rel="shortcut icon" href="static/favicon.ico" />
 					<link
 						rel="stylesheet"
@@ -45,10 +43,18 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/icon?family=Material+Icons"
 					/>
+					<link
+						rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+					/>
 					<link rel="stylesheet" href="static/css/styles.css" />
+					<link rel="stylesheet" href="static/css/aos.css" />
+					<link rel="stylesheet" href="static/css/preloader.css" />
 					{styleTags}
+					<script src="static/js/aos.js" />
 				</Head>
 				<body>
+					<Preloader />
 					{main}
 					<NextScript />
 				</body>
