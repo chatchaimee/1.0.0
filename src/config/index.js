@@ -12,7 +12,7 @@ module.exports = {
 	profile: {
 		title: 'Profile',
 		name: 'Chatchai Meesuksabai',
-		imgPath: 'static/images/profile/me.jpg'
+		imgPath: 'static/images/Profile/me.jpg'
 	},
 	experience: {
 		title: 'Experience',
