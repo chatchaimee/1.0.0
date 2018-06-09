@@ -9,7 +9,12 @@ const HomeStyled = styled.div`
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-image: url('static/images/Home/home.jpg');
-		background-attachment: fixed;
+	}
+
+	@media (min-width: 992px) {
+		.bg-fixed {
+			background-attachment: fixed;
+		}
 	}
 
 	.content {

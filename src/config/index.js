@@ -14,6 +14,14 @@ module.exports = {
 		name: 'Chatchai Meesuksabai',
 		imgPath: 'static/images/profile/me.jpg'
 	},
+	experience: {
+		title: 'Experience',
+		sectionContent: ['Education', 'Career']
+	},
+	abilities: {
+		title: 'Abilities',
+		sectionContent: ['Skills', 'Tools', 'Languages']
+	},
 	footer: {
 		facebook: 'https://www.facebook.com/chatchai.cmee',
 		linkedin: 'https://www.linkedin.com/in/chatchai-meesuksabai',

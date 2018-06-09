@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Avatar, Divider, Typography, withStyles } from '@material-ui/core';
-import getData from '~/src/helpers/app';
+import getData from '~/src/services/api';
 import profiles from '~/src/data/profile.json';
 
 const styles = {

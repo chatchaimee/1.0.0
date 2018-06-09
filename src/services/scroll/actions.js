@@ -1,24 +1,20 @@
-export const types = {
-	START_SCROLL: 'START_SCROLL',
-	STOP_SCROLL: 'STOP_SCROLL',
-	ACTIVE_TAB: 'ACTIVE_TAB'
-};
+import * as actionTypes from './actionTypes';
 
 function startScroll () {
 	return {
-		type: types.START_SCROLL
+		type: actionTypes.START_SCROLL
 	};
 }
 
 function stopScroll () {
 	return {
-		type: types.STOP_SCROLL
+		type: actionTypes.STOP_SCROLL
 	};
 }
 
 function setActiveTab (activeTab) {
 	return {
-		type: types.ACTIVE_TAB,
+		type: actionTypes.ACTIVE_TAB,
 		payload: {
 			activeTab
 		}

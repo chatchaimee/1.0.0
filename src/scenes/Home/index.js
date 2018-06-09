@@ -7,7 +7,7 @@ import HomeStyled from './styles';
 function Home ({ header, subHeader }) {
 	return (
 		<HomeStyled>
-			<div id="HOME" className="component container">
+			<div id="HOME" className="component container bg-fixed">
 				<div className="content">
 					<div data-aos="zoom-in" data-aos-delay="1000">
 						<Typography className="header" variant="display3" gutterBottom>

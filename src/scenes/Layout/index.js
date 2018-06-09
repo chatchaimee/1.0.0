@@ -3,7 +3,7 @@
 import { Fragment, PureComponent } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import handleScroll from '~/src/redux/scroll/actions';
+import handleScroll from '~/src/services/scroll/actions';
 import { layout, footer } from '~/src/config';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';

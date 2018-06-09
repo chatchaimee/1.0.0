@@ -3,7 +3,7 @@
 import { Provider } from 'react-redux';
 import App, { Container } from 'next/app';
 import withRedux from 'next-redux-wrapper';
-import initStore from '~/src/redux/store';
+import initStore from '~/src/store';
 
 class MyApp extends App {
 	static async getInitialProps ({ Component, ctx }) {

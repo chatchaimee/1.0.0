@@ -13,7 +13,7 @@ function Footer ({ facebook, linkedin, github }) {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<i className="fa fa-facebook-square" />
+							<i className="fa fa-facebook-square fa-2x" />
 						</a>
 						<a
 							className="icon"
@@ -21,10 +21,10 @@ function Footer ({ facebook, linkedin, github }) {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<i className="fa fa-linkedin-square" />
+							<i className="fa fa-linkedin-square fa-2x" />
 						</a>
 						<a className="icon" href={github} target="_blank" rel="noopener noreferrer">
-							<i className="fa fa-github-square" />
+							<i className="fa fa-github-square fa-2x" />
 						</a>
 					</div>
 				</div>

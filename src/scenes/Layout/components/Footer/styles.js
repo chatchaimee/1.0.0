@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const FooterStyled = styled.div`
 	.container {
-		padding: 40px 0 0;
+		padding: 25px 0 0;
 		display: block;
 		background-color: #434242;
 	}
@@ -14,11 +14,10 @@ const FooterStyled = styled.div`
 	}
 
 	.contact {
-		padding: 0 0 35px;
+		padding: 0 0 20px;
 	}
 
 	.icon {
-		font-size: 48px;
 		color: #fff;
 		padding: 0 10px 0;
 	}

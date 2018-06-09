@@ -1,4 +1,4 @@
-import { types } from './actions';
+import * as actionTypes from './actionTypes';
 
 const initialState = {
 	scroll: false,
@@ -7,17 +7,17 @@ const initialState = {
 
 function reducer (state = initialState, action) {
 	switch (action.type) {
-		case types.START_SCROLL:
+		case actionTypes.START_SCROLL:
 			return {
 				...state,
 				scroll: true
 			};
-		case types.STOP_SCROLL:
+		case actionTypes.STOP_SCROLL:
 			return {
 				...state,
 				scroll: false
 			};
-		case types.ACTIVE_TAB:
+		case actionTypes.ACTIVE_TAB:
 			return {
 				...state,
 				activeTab: action.payload.activeTab
