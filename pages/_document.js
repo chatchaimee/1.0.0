@@ -51,7 +51,7 @@ class MyDocument extends Document {
 					<link rel="stylesheet" href="static/css/aos.css" />
 					<link rel="stylesheet" href="static/css/preloader.css" />
 					{styleTags}
-					<script src="static/js/aos.js" />
+					<script src="static/js/aos.js" async defer />
 				</Head>
 				<body>
 					<Preloader />
