@@ -35,29 +35,6 @@ class MyDocument extends Document {
 					{/* PWA primary color */}
 					<meta name="theme-color" content={pageContext.theme.palette.primary.main} />
 					<link rel="shortcut icon" href="static/favicon.ico" />
-					{/* Preload css */}
-					<link
-						rel="preload"
-						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-						as="style"
-					/>
-					<link
-						rel="preload"
-						href="https://fonts.googleapis.com/icon?family=Material+Icons"
-						as="style"
-					/>
-					<link
-						rel="preload"
-						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-						as="style"
-					/>
-					<link rel="preload" href="static/css/styles.css" as="style" />
-					<link rel="preload" href="static/css/aos.css" as="style" />
-					<link rel="preload" href="static/css/preloader.css" as="style" />
-
-					<script src="static/js/aos.js" async defer />
-				</Head>
-				<body>
 					<link
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
@@ -74,6 +51,10 @@ class MyDocument extends Document {
 					<link rel="stylesheet" href="static/css/aos.css" />
 					<link rel="stylesheet" href="static/css/preloader.css" />
 					{styleTags}
+
+					<script src="static/js/aos.js" async defer />
+				</Head>
+				<body>
 					<Preloader />
 					{main}
 					<NextScript />
