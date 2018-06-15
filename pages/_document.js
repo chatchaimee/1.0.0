@@ -35,7 +35,7 @@ class MyDocument extends Document {
 					{/* PWA primary color */}
 					<meta name="theme-color" content={pageContext.theme.palette.primary.main} />
 					<link rel="shortcut icon" href="static/favicon.ico" />
-					{/* Preload javascript and css */}
+					{/* Preload css */}
 					<link
 						rel="preload"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
@@ -54,7 +54,6 @@ class MyDocument extends Document {
 					<link rel="preload" href="static/css/styles.css" as="style" />
 					<link rel="preload" href="static/css/aos.css" as="style" />
 					<link rel="preload" href="static/css/preloader.css" as="style" />
-					<script rel="preload" src="static/js/aos.js" as="script" />
 
 					<link
 						rel="stylesheet"
