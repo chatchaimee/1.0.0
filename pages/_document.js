@@ -17,7 +17,7 @@ class MyDocument extends Document {
 		const sheet = new ServerStyleSheet();
 		const main = sheet.collectStyles(<Main />);
 		const styleTags = sheet.getStyleElement();
-		const { pageContext } = this.props;
+		const { pageContext, buildManifest: { css } } = this.props;
 
 		return (
 			<html lang="en" dir="ltr">
@@ -39,19 +39,8 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
 					/>
-					<link
-						rel="stylesheet"
-						href="https://fonts.googleapis.com/icon?family=Material+Icons"
-					/>
-					<link
-						rel="stylesheet"
-						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-					/>
-					<link rel="stylesheet" href="static/css/styles.css" />
-					<link rel="stylesheet" href="static/css/aos.css" />
-					<link rel="stylesheet" href="static/css/preloader.css" />
+					{css.map(file => <link key={file} rel="stylesheet" href={`/_next/${file}`} />)}
 					{styleTags}
-
 					<script src="static/js/aos.js" async defer />
 				</Head>
 				<body>

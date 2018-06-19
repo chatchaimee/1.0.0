@@ -5,6 +5,10 @@ import Experience from '~/src/scenes/Experience';
 import Abilities from '~/src/scenes/Abilities';
 import withRoot from '~/src/withRoot';
 import { home, profile, experience, abilities } from '~/src/config';
+import '~/static/css/styles.css';
+import '~/static/css/aos.css';
+import '~/static/css/preloader.css';
+import '~/static/css/font-awesome.min.css';
 
 function Index () {
 	return (
