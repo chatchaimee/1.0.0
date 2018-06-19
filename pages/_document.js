@@ -39,6 +39,10 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
 					/>
+					<link
+						rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+					/>
 					{css.map(file => <link key={file} rel="stylesheet" href={`_next/${file}`} />)}
 					{styleTags}
 					<script src="static/js/aos.js" async defer />
