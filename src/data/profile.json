@@ -1,6 +1,10 @@
 {
-	"Age": "27 years",
-	"Religion": "Buddhist",
-	"Height / Weight": "163cm / 83kgs",
-	"Nationality": "Thai"
+	"About me":
+		"Hello! I'm a developer who love coding. When I have a time, I always spending time on fixing the detail and optimizing the program / application. I like to learn the new things all the time. When the new things come, I learn. I love to see a beautiful UX / UI and I often take it as a model in the design application.",
+	"Details": {
+		"Age": "27 years",
+		"Religion": "Buddhist",
+		"Height / Weight": "163cm / 83kgs",
+		"Nationality": "Thai"
+	}
 }

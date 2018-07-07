@@ -6,5 +6,25 @@
 	{
 		"title": "Docker",
 		"percent": 20
+	},
+	{
+		"title": "PhpStorm",
+		"percent": 50
+	},
+	{
+		"title": "WebStorm",
+		"percent": 50
+	},
+	{
+		"title": "IntelliJ IDEA",
+		"percent": 50
+	},
+	{
+		"title": "Visual Studio Code",
+		"percent": 60
+	},
+	{
+		"title": "Postman",
+		"percent": 50
 	}
 ]
